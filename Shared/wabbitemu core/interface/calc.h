@@ -33,8 +33,8 @@ typedef struct profiler {
 	BOOL running;
 	int blockSize;
 	long long totalTime;
-	long flash_data[MAX_FLASH_PAGE_SIZE][PAGE_SIZE / MIN_BLOCK_SIZE];
-	long ram_data[MAX_RAM_PAGE_SIZE][PAGE_SIZE / MIN_BLOCK_SIZE];
+    long flash_data[MAX_FLASH_PAGE_SIZE][1024];//;[PAGE_SIZE / MIN_BLOCK_SIZE];
+    long ram_data[MAX_RAM_PAGE_SIZE][1024];//[PAGE_SIZE / MIN_BLOCK_SIZE];
 } profiler_t;
 
 #define KEY_STRING_SIZE 56
