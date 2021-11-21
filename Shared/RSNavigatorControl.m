@@ -152,7 +152,7 @@
 		NSString *itemIdentifier = [_itemIdentifiers objectAtIndex:itemIndex];
 		
 		if ([itemIdentifier isEqualToString:[self selectedItemIdentifier]])
-            [[_cells objectAtIndex:itemIndex] setState:NSOnState];
+            [[_cells objectAtIndex:itemIndex] setState:NSControlStateValueOn];
         else
             [[_cells objectAtIndex:itemIndex] setState:NSOffState];
         

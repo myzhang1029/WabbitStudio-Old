@@ -450,7 +450,7 @@
 			[item setRepresentedObject:[child representedObject]];
 			
 			if (fileContainer == child)
-				[item setState:NSOnState];
+				[item setState:NSControlStateValueOn];
 			
 			if (![child isLeafNode]) {
 				NSMenu *submenu = [[[NSMenu alloc] initWithTitle:[item title]] autorelease];
@@ -489,7 +489,7 @@
 			
 			if (symbol == selectedSymbol) {
 				*selectedSymbolIndex = symbolIndex;
-				[item setState:NSOnState];
+				[item setState:NSControlStateValueOn];
 			}
 			else
 				[item setState:NSOffState];
@@ -509,7 +509,7 @@
 			[item setImage:[symbol icon]];
 			[[item image] setSize:NSSmallSize];
 			[item setRepresentedObject:symbol];
-			[item setState:(symbolIndex == *selectedSymbolIndex)?NSOnState:NSOffState];
+			[item setState:(symbolIndex == *selectedSymbolIndex)?NSControlStateValueOn:NSOffState];
 		}
 	}
 }

@@ -1442,7 +1442,7 @@
 	WCFontAndColorTheme *currentTheme = [[WCFontAndColorThemeManager sharedManager] currentTheme];
 	
 	[[[currentTheme currentLineColor] colorWithAlphaComponent:0.5] setFill];
-	NSRectFillUsingOperation(lineRect, NSCompositeSourceOver);
+	NSRectFillUsingOperation(lineRect, NSCompositingOperationSourceOver);
 	[[currentTheme currentLineColor] setFill];
 	NSRectFill(NSMakeRect(NSMinX(lineRect), NSMinY(lineRect), NSWidth(lineRect), 1.0));
 	NSRectFill(NSMakeRect(NSMinX(lineRect), NSMaxY(lineRect)-1, NSWidth(lineRect), 1.0));
@@ -1465,7 +1465,7 @@
 	guideRect.size.width = NSWidth([self bounds]) - xPosition;
 	
 	[[[NSColor lightGrayColor] colorWithAlphaComponent:0.35] setFill];
-	NSRectFillUsingOperation(guideRect, NSCompositeSourceOver);
+	NSRectFillUsingOperation(guideRect, NSCompositingOperationSourceOver);
 	
 	guideRect.size.width = 1.0;
 	
@@ -1939,7 +1939,7 @@ static const CGFloat kTriangleHeight = 4.0;
 					
 					NSImage *image = [NSImage imageNamed:@"Error"];
 					
-					[image drawInRect:NSMakeRect(NSMaxX(lineRect)-stringSize.width-kIconSize.width, NSMinY(lineRect)+floor((NSHeight(lineRect)-kIconSize.height)/2.0), kIconSize.width, kIconSize.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
+					[image drawInRect:NSMakeRect(NSMaxX(lineRect)-stringSize.width-kIconSize.width, NSMinY(lineRect)+floor((NSHeight(lineRect)-kIconSize.height)/2.0), kIconSize.width, kIconSize.height) fromRect:NSZeroRect operation:NSCompositingOperationSourceOver fraction:1.0 respectFlipped:YES hints:nil];
 					
 					[errorIndexes addIndex:[buildIssue range].location];
 				}
@@ -2009,7 +2009,7 @@ static const CGFloat kTriangleHeight = 4.0;
 					
 					NSImage *image = [NSImage imageNamed:@"Warning"];
 					
-					[image drawInRect:NSMakeRect(NSMaxX(lineRect)-stringSize.width-kIconSize.width, NSMinY(lineRect)+floor((NSHeight(lineRect)-kIconSize.height)/2.0), kIconSize.width, kIconSize.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
+					[image drawInRect:NSMakeRect(NSMaxX(lineRect)-stringSize.width-kIconSize.width, NSMinY(lineRect)+floor((NSHeight(lineRect)-kIconSize.height)/2.0), kIconSize.width, kIconSize.height) fromRect:NSZeroRect operation:NSCompositingOperationSourceOver fraction:1.0 respectFlipped:YES hints:nil];
 					
 					[warningIndexes addIndex:[buildIssue range].location];
 				}

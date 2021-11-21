@@ -33,7 +33,7 @@
 }
 
 - (void)drawWithFrame:(NSRect)frame inView:(NSView *)controlView {
-    if (self.state == NSOnState) {
+    if (self.state == NSControlStateValueOn) {
         [[NSGraphicsContext currentContext] saveGraphicsState];
         
         // light vertical gradient

@@ -175,7 +175,7 @@
 	WCFontAndColorTheme *currentTheme = [[WCFontAndColorThemeManager sharedManager] currentTheme];
 	
 	[[[currentTheme currentLineColor] colorWithAlphaComponent:0.5] setFill];
-	NSRectFillUsingOperation(lineRect, NSCompositeSourceOver);
+	NSRectFillUsingOperation(lineRect, NSCompositingOperationSourceOver);
 	[[currentTheme currentLineColor] setFill];
 	NSRectFill(NSMakeRect(NSMinX(lineRect), NSMinY(lineRect), NSWidth(lineRect), 1.0));
 	NSRectFill(NSMakeRect(NSMinX(lineRect), NSMaxY(lineRect)-1, NSWidth(lineRect), 1.0));

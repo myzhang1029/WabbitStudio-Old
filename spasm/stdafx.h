@@ -61,7 +61,7 @@ using namespace ATL;
 #include <unistd.h>
 #include <ctype.h>
 #include <stdarg.h>
-#include "gmp.h"
+#include <gmp.h>
 #include <openssl/md5.h>
 #include <math.h>
 #include <errno.h>

@@ -203,7 +203,7 @@ typedef NSInteger	NSWindowAnimationBehavior;
 {
 	NSRect			myFrame = [self frame];
 	myFrame.size = [snapshotImage size];
-	NSWindow	*	animationWindow = [[ULIQuicklyAnimatingWindow alloc] initWithContentRect: myFrame styleMask: NSBorderlessWindowMask backing: NSBackingStoreBuffered defer: NO];
+	NSWindow	*	animationWindow = [[ULIQuicklyAnimatingWindow alloc] initWithContentRect: myFrame styleMask: NSWindowStyleMaskBorderless backing: NSBackingStoreBuffered defer: NO];
 	[animationWindow setOpaque: NO];
 	
 	if( [animationWindow respondsToSelector: @selector(setAnimationBehavior:)] )

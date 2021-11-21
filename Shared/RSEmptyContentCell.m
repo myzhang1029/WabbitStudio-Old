@@ -24,7 +24,7 @@
 		return nil;
 	
 	[self setFont:[NSFont controlContentFontOfSize:[NSFont systemFontSizeForControlSize:NSRegularControlSize]]];
-	[self setAlignment:NSCenterTextAlignment];
+	[self setAlignment:NSTextAlignmentCenter];
 	
 	return self;
 }

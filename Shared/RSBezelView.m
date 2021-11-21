@@ -30,7 +30,7 @@
 }
 - (void)drawRect:(NSRect)dirtyRect {
     if ([self image])
-		[[self image] drawInRect:[self bounds] fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
+		[[self image] drawInRect:[self bounds] fromRect:NSZeroRect operation:NSCompositingOperationSourceOver fraction:1.0 respectFlipped:YES hints:nil];
 	else if ([[self string] length]) {
 		[[[NSColor darkGrayColor] colorWithAlphaComponent:0.9] setFill];
 		[[NSBezierPath bezierPathWithRoundedRect:[self bounds] xRadius:10.0 yRadius:10.0] fill];
@@ -99,6 +99,6 @@
 	[_stringCell setTextColor:[NSColor whiteColor]];
 	[_stringCell setBackgroundStyle:NSBackgroundStyleLowered];
 	[_stringCell setLineBreakMode:NSLineBreakByClipping];
-	[_stringCell setAlignment:NSCenterTextAlignment];
+	[_stringCell setAlignment:NSTextAlignmentCenter];
 }
 @end

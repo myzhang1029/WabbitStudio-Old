@@ -21,7 +21,7 @@
 		[recessedButton setButtonType:NSPushOnPushOffButton];
 		[[recessedButton cell] setHighlightsBy:NSCellIsBordered | NSCellIsInsetButton];
 		[recessedButton setShowsBorderOnlyWhileMouseInside:NO];
-		[recessedButton setState:NSOnState]; // ensures it looks pushed-in.
+		[recessedButton setState:NSControlStateValueOn]; // ensures it looks pushed-in.
 	}
 	return self;
 }

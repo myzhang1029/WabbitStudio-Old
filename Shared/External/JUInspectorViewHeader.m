@@ -65,7 +65,7 @@
     [nameField setEditable:NO];
     [nameField setBackgroundColor:[NSColor clearColor]];
     [nameField setBezeled:NO];
-    [nameField setFont:[NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSSmallControlSize]]];
+    [nameField setFont:[NSFont boldSystemFontOfSize:[NSFont systemFontSizeForControlSize:NSControlSizeSmall]]];
     [nameField setTextColor:[NSColor colorWithCalibratedRed:0.220 green:0.224 blue:0.231 alpha:1.0]];
 	[[nameField cell] setBackgroundStyle:NSBackgroundStyleRaised];
     

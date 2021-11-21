@@ -141,7 +141,7 @@ finalize_buttons:
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
-    [[[self calculator] skinImage] drawInRect:[self bounds] fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
+    [[[self calculator] skinImage] drawInRect:[self bounds] fromRect:NSZeroRect operation:NSCompositingOperationSourceOver fraction:1.0 respectFlipped:YES hints:nil];
 	
 	NSImage *keymap = [[self calculator] keymapImage];
 	NSBitmapImageRep *bitmap = (NSBitmapImageRep *)[keymap bestRepresentationForRect:NSZeroRect context:nil hints:nil];

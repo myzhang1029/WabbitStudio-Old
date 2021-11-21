@@ -16,7 +16,7 @@
 @implementation RSBezelWindow
 #pragma mark *** Subclass Overrides ***
 - (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag {
-	if (!(self = [super initWithContentRect:contentRect styleMask:NSBorderlessWindowMask backing:bufferingType defer:flag]))
+	if (!(self = [super initWithContentRect:contentRect styleMask:NSWindowStyleMaskBorderless backing:bufferingType defer:flag]))
 		return nil;
 	
 	[self setBackgroundColor:[NSColor clearColor]];

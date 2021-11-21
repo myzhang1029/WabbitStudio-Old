@@ -59,7 +59,7 @@
         frame.size.height += [header bounds].size.height;
         
         [body setHidden:NO];
-        [header setState:NSOnState];
+        [header setState:NSControlStateValueOn];
         [container arrangeViews];
     }
     else

@@ -558,7 +558,7 @@
 							buttonFrame.origin.x = buttonX;
 							[button setFrame:buttonFrame];
 							if ([selectedItems containsObject:itemIdentifier]) {
-								[button setState:NSOnState];
+								[button setState:NSControlStateValueOn];
 							}
 							[self addSubview:button positioned:NSWindowBelow relativeTo:_accessoryView];
 							[menuItems replaceObjectAtIndex:i withObject:button];
@@ -907,7 +907,7 @@
 	if (menuMode) {
 		// MenuItem. Ensure item has appropriate state.
 		nowSelected = ![[_selectedItems objectAtIndex:groupNumber] containsObject:identifier];
-		[sender setState:((nowSelected) ? NSOnState : NSOffState)];
+		[sender setState:((nowSelected) ? NSControlStateValueOn : NSOffState)];
 	} else {
 		// Button. Item will already have appropriate state.
 		nowSelected = ([button state] != NSOffState);
@@ -984,7 +984,7 @@
 	// Ensure selected status of item's control reflects desired value.
 	NSButton *button = [self getButtonForItem:identifier inGroup:groupNumber];
 	if (selected && [button state] == NSOffState) {
-		[button setState:NSOnState];
+		[button setState:NSControlStateValueOn];
 	} else if (!selected && [button state] != NSOffState) {
 		[button setState:NSOffState];
 	}

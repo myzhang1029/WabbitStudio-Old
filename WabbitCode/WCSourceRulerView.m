@@ -508,7 +508,7 @@ static const CGFloat kBuildIssueWidthHeight = 10.0;
 					
 					lineRect = NSMakeRect(NSMinX(buildIssueRect)+kIconPaddingLeft, [self convertPoint:lineRect.origin fromView:[self clientView]].y+floor((NSHeight(lineRect)-kBuildIssueWidthHeight)/2.0), kBuildIssueWidthHeight, kBuildIssueWidthHeight);
 					
-					[(NSImage *)[NSImage imageNamed:@"Error"] drawInRect:lineRect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
+					[(NSImage *)[NSImage imageNamed:@"Error"] drawInRect:lineRect fromRect:NSZeroRect operation:NSCompositingOperationSourceOver fraction:1.0 respectFlipped:YES hints:nil];
 					
 					[errorIndexes addIndex:[buildIssue range].location];
 				}
@@ -553,7 +553,7 @@ static const CGFloat kBuildIssueWidthHeight = 10.0;
 					
 					lineRect = NSMakeRect(NSMinX(buildIssueRect)+kIconPaddingLeft, [self convertPoint:lineRect.origin fromView:[self clientView]].y+floor((NSHeight(lineRect)-kBuildIssueWidthHeight)/2.0), kBuildIssueWidthHeight, kBuildIssueWidthHeight);
 					
-					[(NSImage *)[NSImage imageNamed:@"Warning"] drawInRect:lineRect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
+					[(NSImage *)[NSImage imageNamed:@"Warning"] drawInRect:lineRect fromRect:NSZeroRect operation:NSCompositingOperationSourceOver fraction:1.0 respectFlipped:YES hints:nil];
 					
 					[warningIndexes addIndex:[buildIssue range].location];
 				}
@@ -586,7 +586,7 @@ static const CGFloat kBuildIssueWidthHeight = 10.0;
 		
 		NSImage *breakpointIcon = [WCBreakpoint breakpointIconWithSize:NSMakeSize(NSWidth(lineRect), NSHeight(lineRect)) type:[fileBreakpoint type] active:[fileBreakpoint isActive] enabled:[[[fileBreakpoint projectDocument] breakpointManager] breakpointsEnabled]];
 		
-		[breakpointIcon drawInRect:lineRect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
+		[breakpointIcon drawInRect:lineRect fromRect:NSZeroRect operation:NSCompositingOperationSourceOver fraction:1.0 respectFlipped:YES hints:nil];
 	}
 }
 
@@ -605,7 +605,7 @@ static const CGFloat kBuildIssueWidthHeight = 10.0;
 		NSImage *bookmarkImage = [NSImage imageNamed:@"Bookmark"];
 		NSRect bookmarkRect = NSMakeRect(NSMinX(lineRect)+kIconPaddingLeft, NSMinY(lineRect)+kIconPaddingTop, kIconWidthHeight, kIconWidthHeight);
 		
-		[bookmarkImage drawInRect:bookmarkRect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
+		[bookmarkImage drawInRect:bookmarkRect fromRect:NSZeroRect operation:NSCompositingOperationSourceOver fraction:1.0 respectFlipped:YES hints:nil];
 	}
 }
 #pragma mark Properties

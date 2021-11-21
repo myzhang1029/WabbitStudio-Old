@@ -53,7 +53,7 @@
 	NSRect imageRect = [self imageRectForBounds:cellFrame];
 	
 	if ([self image])
-		[[self image] drawInRect:imageRect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
+		[[self image] drawInRect:imageRect fromRect:NSZeroRect operation:NSCompositingOperationSourceOver fraction:1.0 respectFlipped:YES hints:nil];
 
 	static const CGFloat kArrowSeparatorMarginRight = 2.0;
 	
@@ -76,7 +76,7 @@
 	}
 	
 	if (![self isLastPathComponentCell])
-		[arrowSeparator drawInRect:NSCenteredRectWithSize([arrowSeparator size], NSMakeRect(NSMaxX(cellFrame)-[arrowSeparator size].width-kArrowSeparatorMarginRight, NSMinY(cellFrame), [arrowSeparator size].width, NSHeight(cellFrame))) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0 respectFlipped:YES hints:nil];
+		[arrowSeparator drawInRect:NSCenteredRectWithSize([arrowSeparator size], NSMakeRect(NSMaxX(cellFrame)-[arrowSeparator size].width-kArrowSeparatorMarginRight, NSMinY(cellFrame), [arrowSeparator size].width, NSHeight(cellFrame))) fromRect:NSZeroRect operation:NSCompositingOperationSourceOver fraction:1.0 respectFlipped:YES hints:nil];
 }
 
 - (NSAttributedString *)attributedToolTip {	

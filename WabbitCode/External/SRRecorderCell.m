@@ -279,7 +279,7 @@
 	// Draw text
 		NSMutableParagraphStyle *mpstyle = [[[NSParagraphStyle defaultParagraphStyle] mutableCopy] autorelease];
 		[mpstyle setLineBreakMode: NSLineBreakByTruncatingTail];
-		[mpstyle setAlignment: NSCenterTextAlignment];
+		[mpstyle setAlignment: NSTextAlignmentCenter];
 		
 	// Only the KeyCombo should be black and in a bigger font size
 		BOOL recordingOrEmpty = (isRecording || [self _isEmpty]);
@@ -481,7 +481,7 @@
 	// Draw text
 		NSMutableParagraphStyle *mpstyle = [[[NSParagraphStyle defaultParagraphStyle] mutableCopy] autorelease];
 		[mpstyle setLineBreakMode: NSLineBreakByTruncatingTail];
-		[mpstyle setAlignment: NSCenterTextAlignment];
+		[mpstyle setAlignment: NSTextAlignmentCenter];
 		
 		CGFloat alphaCombo = alphaView;
 		CGFloat alphaRecordingText = alphaRecording;

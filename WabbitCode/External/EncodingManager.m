@@ -240,7 +240,7 @@ static int encodingCompare(const void *firstPtr, const void *secondPtr) {
         NSInteger cnt, numEncodings = [encodingMatrix numberOfRows];
         for (cnt = 0; cnt < numEncodings; cnt++) {
             NSCell *cell = [encodingMatrix cellAtRow:cnt column:0];
-            [cell setState:[encodings containsObject:[cell representedObject]] ? NSOnState : NSOffState];
+            [cell setState:[encodings containsObject:[cell representedObject]] ? NSControlStateValueOn : NSOffState];
         }
     }
 
@@ -276,7 +276,7 @@ static int encodingCompare(const void *firstPtr, const void *secondPtr) {
     for (cnt = 0; cnt < numRows; cnt++) {
         NSCell *cell = [encodingMatrix cellAtRow:cnt column:0];
         NSNumber *encodingNumber = [cell representedObject];
-        if (([encodingNumber unsignedIntegerValue] != NoStringEncoding) && ([cell state] == NSOnState)) [encs addObject:encodingNumber];
+        if (([encodingNumber unsignedIntegerValue] != NoStringEncoding) && ([cell state] == NSControlStateValueOn)) [encs addObject:encodingNumber];
     }
 
     [encodings autorelease];

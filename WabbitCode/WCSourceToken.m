@@ -162,7 +162,7 @@ static NSMapTable *typesToIcons;
 		NSColor *borderColor = [NSColor colorWithCalibratedHue:hue saturation:saturation brightness:(brightness-0.35) alpha:alpha];
 		NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect:boundsRect xRadius:rectRadius yRadius:rectRadius];
 		NSMutableParagraphStyle *style = [[[NSParagraphStyle defaultParagraphStyle] mutableCopy] autorelease];
-		[style setAlignment:NSCenterTextAlignment];
+		[style setAlignment:NSTextAlignmentCenter];
 		NSAttributedString *foregroundString = [[[NSAttributedString alloc] initWithString:tokenString attributes:[NSDictionary dictionaryWithObjectsAndKeys:[NSColor whiteColor],NSForegroundColorAttributeName,style,NSParagraphStyleAttributeName,[NSFont fontWithName:@"Menlo" size:13.0],NSFontAttributeName, nil]] autorelease];
 		NSShadow *shadow = [[[NSShadow alloc] init] autorelease];
 		[shadow setShadowBlurRadius:2.0];
