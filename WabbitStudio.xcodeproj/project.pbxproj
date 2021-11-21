@@ -632,8 +632,8 @@
 		79A1A091154D26A70006F6B6 /* spasm in Resources */ = {isa = PBXBuildFile; fileRef = 7973AD91154D21E400DEC0EF /* spasm */; };
 		79FDD16B157D6E5800E9C691 /* WCHexadecimalToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FDD16A157D6E5800E9C691 /* WCHexadecimalToken.m */; };
 		79FDD16F157D88F900E9C691 /* WCBinaryToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 79FDD16E157D88F900E9C691 /* WCBinaryToken.m */; };
-		F809BB9A274AD9FB00BC2E13 /* libopenssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F809BB99274AD99400BC2E13 /* libopenssl.dylib */; };
-		F809BB9B274ADA0300BC2E13 /* libopenssl.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F809BB99274AD99400BC2E13 /* libopenssl.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F830AFA4274AF2B100EFFC92 /* libgmp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F830AF9B274AF24B00EFFC92 /* libgmp.dylib */; };
+		F830AFA5274AF2B100EFFC92 /* libgmp.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F830AF9B274AF24B00EFFC92 /* libgmp.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F88BCC2E274AB3F400FEFA92 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88BCC2A274AB38700FEFA92 /* BGHUDAppKit.framework */; };
 		F88BCC31274AB41500FEFA92 /* BGHUDAppKit.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = F88BCC2A274AB38700FEFA92 /* BGHUDAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F88BCCB1274AB48500FEFA92 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88BCCAE274AB43B00FEFA92 /* PSMTabBarControl.framework */; };
@@ -641,8 +641,6 @@
 		F88BCCB4274AB4DB00FEFA92 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88BCCAE274AB43B00FEFA92 /* PSMTabBarControl.framework */; };
 		F88BCCB5274AB4DB00FEFA92 /* PSMTabBarControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F88BCCAE274AB43B00FEFA92 /* PSMTabBarControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8F22C03274AC3A300C079E4 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = F8F22C02274AC3A300C079E4 /* Sparkle */; };
-		F8F24FB1274AC96F00C079E4 /* libgmp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F24FB0274AC96200C079E4 /* libgmp.dylib */; };
-		F8F24FB2274AC96F00C079E4 /* libgmp.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F8F24FB0274AC96200C079E4 /* libgmp.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -667,19 +665,12 @@
 			remoteGlobalIDString = 7973AD90154D21E400DEC0EF;
 			remoteInfo = spasm;
 		};
-		F809BB98274AD99400BC2E13 /* PBXContainerItemProxy */ = {
+		F830AFA6274AF2B100EFFC92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F809B48D274AD98A00BC2E13 /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8098F6E274AD35200BC2E13;
-			remoteInfo = openssl;
-		};
-		F809BB9C274ADA1A00BC2E13 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F809B48D274AD98A00BC2E13 /* openssl.xcodeproj */;
+			containerPortal = 071ECCB514A4233C002409F8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F8098F6D274AD35200BC2E13;
-			remoteInfo = crypto;
+			remoteGlobalIDString = F830AF9A274AF24B00EFFC92;
+			remoteInfo = gmp;
 		};
 		F88BCC29274AB38700FEFA92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -708,20 +699,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 8BD4395A1185147D00DB4AC3;
 			remoteInfo = PSMTabBarControlDemo;
-		};
-		F8F24FAF274AC96200C079E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8F24F24274AC96100C079E4 /* gmp.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8F23DE0274AC84D00C079E4;
-			remoteInfo = gmp;
-		};
-		F8F24FB4274AC9A800C079E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F8F24F24274AC96100C079E4 /* gmp.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F8F23DDF274AC84D00C079E4;
-			remoteInfo = gmp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -786,8 +763,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F8F24FB2274AC96F00C079E4 /* libgmp.dylib in Embed Libraries */,
-				F809BB9B274ADA0300BC2E13 /* libopenssl.dylib in Embed Libraries */,
+				F830AFA5274AF2B100EFFC92 /* libgmp.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4466,7 +4442,6 @@
 		F809B48A274AD98A00BC2E13 /* NOTES-PERL.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "NOTES-PERL.md"; sourceTree = "<group>"; };
 		F809B48B274AD98A00BC2E13 /* config */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config; sourceTree = "<group>"; };
 		F809B48C274AD98A00BC2E13 /* NEWS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NEWS.md; sourceTree = "<group>"; };
-		F809B48D274AD98A00BC2E13 /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = openssl.xcodeproj; sourceTree = "<group>"; };
 		F809B490274AD98A00BC2E13 /* NOTES-DJGPP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "NOTES-DJGPP.md"; sourceTree = "<group>"; };
 		F809B491274AD98A00BC2E13 /* NOTES-NONSTOP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "NOTES-NONSTOP.md"; sourceTree = "<group>"; };
 		F809B494274AD98A00BC2E13 /* pem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
@@ -6199,6 +6174,8 @@
 		F809BB93274AD99200BC2E13 /* configdata.pm.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = configdata.pm.in; sourceTree = "<group>"; };
 		F809BB94274AD99200BC2E13 /* README-PROVIDERS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "README-PROVIDERS.md"; sourceTree = "<group>"; };
 		F809BB96274AD99200BC2E13 /* haiku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = haiku.h; sourceTree = "<group>"; };
+		F830AF9B274AF24B00EFFC92 /* libgmp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libgmp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F830AFAC274AF2CE00EFFC92 /* libcrypto.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcrypto.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88BCBCE274AB38700FEFA92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F88BCBD0274AB38700FEFA92 /* BGHUDSliderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGHUDSliderCell.m; sourceTree = "<group>"; };
 		F88BCBD1274AB38700FEFA92 /* BGHUDOutlineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGHUDOutlineView.h; sourceTree = "<group>"; };
@@ -6273,7 +6250,7 @@
 		F88BCC1F274AB38700FEFA92 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F88BCC20274AB38700FEFA92 /* BGHUDAppKitFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BGHUDAppKitFramework-Info.plist"; sourceTree = "<group>"; };
 		F88BCC23274AB38700FEFA92 /* 8acda6c97366f7af7a60b37b3a56aa4b-manifest.xcbuild */ = {isa = PBXFileReference; lastKnownFileType = text; path = "8acda6c97366f7af7a60b37b3a56aa4b-manifest.xcbuild"; sourceTree = "<group>"; };
-		F88BCC24274AB38700FEFA92 /* BuildDescriptionCacheIndex-6a573bea158a6e8c94009b7ca545d3db */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BuildDescriptionCacheIndex-6a573bea158a6e8c94009b7ca545d3db"; sourceTree = "<group>"; };
+		F88BCC24274AB38700FEFA92 /* BuildDescriptionCacheIndex-6a573bea158a6e8c94009b7ca545d3db */ = {isa = PBXFileReference; lastKnownFileType = text; path = "BuildDescriptionCacheIndex-6a573bea158a6e8c94009b7ca545d3db"; sourceTree = "<group>"; };
 		F88BCC25274AB38700FEFA92 /* README.textile */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.textile; sourceTree = "<group>"; };
 		F88BCC26274AB38700FEFA92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88BCC27274AB38700FEFA92 /* version.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = version.plist; sourceTree = "<group>"; };
@@ -8354,7 +8331,6 @@
 		F8F24F21274AC96100C079E4 /* divrem2inv.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = divrem2inv.c; sourceTree = "<group>"; };
 		F8F24F22274AC96100C079E4 /* mod_1_1-2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "mod_1_1-2.c"; sourceTree = "<group>"; };
 		F8F24F23274AC96100C079E4 /* noop.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = noop.c; sourceTree = "<group>"; };
-		F8F24F24274AC96100C079E4 /* gmp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = gmp.xcodeproj; sourceTree = "<group>"; };
 		F8F24F28274AC96100C079E4 /* inits.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inits.c; sourceTree = "<group>"; };
 		F8F24F29274AC96100C079E4 /* get_num.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = get_num.c; sourceTree = "<group>"; };
 		F8F24F2A274AC96100C079E4 /* get_den.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = get_den.c; sourceTree = "<group>"; };
@@ -8533,9 +8509,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F809BB9A274AD9FB00BC2E13 /* libopenssl.dylib in Frameworks */,
+				F830AFA4274AF2B100EFFC92 /* libgmp.dylib in Frameworks */,
 				79A1A08D154D262A0006F6B6 /* libc.dylib in Frameworks */,
-				F8F24FB1274AC96F00C079E4 /* libgmp.dylib in Frameworks */,
 				79A1A08B154D260C0006F6B6 /* libmathCommon.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -8934,6 +8909,8 @@
 				073737AF14FC206C00B11AFC /* WabbitEmuQLPlugin.qlgenerator */,
 				0742293E14FD948700EDA215 /* WabbitCodeQLPlugin.qlgenerator */,
 				7973AD91154D21E400DEC0EF /* spasm */,
+				F830AF9B274AF24B00EFFC92 /* libgmp.dylib */,
+				F830AFAC274AF2CE00EFFC92 /* libcrypto.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -10123,7 +10100,6 @@
 				F809B48A274AD98A00BC2E13 /* NOTES-PERL.md */,
 				F809B48B274AD98A00BC2E13 /* config */,
 				F809B48C274AD98A00BC2E13 /* NEWS.md */,
-				F809B48D274AD98A00BC2E13 /* openssl.xcodeproj */,
 				F809B490274AD98A00BC2E13 /* NOTES-DJGPP.md */,
 				F809B491274AD98A00BC2E13 /* NOTES-NONSTOP.md */,
 				F809B492274AD98A00BC2E13 /* include */,
@@ -14215,14 +14191,6 @@
 			path = TLSProxy;
 			sourceTree = "<group>";
 		};
-		F809B48E274AD98A00BC2E13 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F809BB99274AD99400BC2E13 /* libopenssl.dylib */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F809B492274AD98A00BC2E13 /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -16811,7 +16779,6 @@
 				F8F24EE6274AC96100C079E4 /* compile */,
 				F8F24EE7274AC96100C079E4 /* NEWS */,
 				F8F24EE8274AC96100C079E4 /* tune */,
-				F8F24F24274AC96100C079E4 /* gmp.xcodeproj */,
 				F8F24F27274AC96100C079E4 /* mpq */,
 				F8F24F4A274AC96100C079E4 /* test-driver */,
 				F8F24F4B274AC96100C079E4 /* version.c */,
@@ -20124,14 +20091,6 @@
 			path = tune;
 			sourceTree = "<group>";
 		};
-		F8F24F25274AC96100C079E4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F8F24FB0274AC96200C079E4 /* libgmp.dylib */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F8F24F27274AC96100C079E4 /* mpq */ = {
 			isa = PBXGroup;
 			children = (
@@ -20420,13 +20379,42 @@
 			buildRules = (
 			);
 			dependencies = (
-				F809BB9D274ADA1A00BC2E13 /* PBXTargetDependency */,
-				F8F24FB5274AC9A800C079E4 /* PBXTargetDependency */,
+				F830AFA7274AF2B100EFFC92 /* PBXTargetDependency */,
 			);
 			name = spasm;
 			productName = spasm;
 			productReference = 7973AD91154D21E400DEC0EF /* spasm */;
 			productType = "com.apple.product-type.tool";
+		};
+		F830AF9A274AF24B00EFFC92 /* gmp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F830AF9C274AF24B00EFFC92 /* Build configuration list for PBXNativeTarget "gmp" */;
+			buildPhases = (
+				F830AF9F274AF25900EFFC92 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gmp;
+			productName = gmp;
+			productReference = F830AF9B274AF24B00EFFC92 /* libgmp.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		F830AFAB274AF2CE00EFFC92 /* crypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F830AFAD274AF2CE00EFFC92 /* Build configuration list for PBXNativeTarget "crypto" */;
+			buildPhases = (
+				F830AFB0274AF2DF00EFFC92 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = crypto;
+			productName = crypto;
+			productReference = F830AFAC274AF2CE00EFFC92 /* libcrypto.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -20437,6 +20425,14 @@
 				CLASSPREFIX = "";
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Revolution Software";
+				TargetAttributes = {
+					F830AF9A274AF24B00EFFC92 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					F830AFAB274AF2CE00EFFC92 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
 			};
 			buildConfigurationList = 071ECCB814A4233C002409F8 /* Build configuration list for PBXProject "WabbitStudio" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -20494,14 +20490,6 @@
 					ProjectRef = F88BCC1C274AB38700FEFA92 /* bghudtest.xcodeproj */;
 				},
 				{
-					ProductGroup = F8F24F25274AC96100C079E4 /* Products */;
-					ProjectRef = F8F24F24274AC96100C079E4 /* gmp.xcodeproj */;
-				},
-				{
-					ProductGroup = F809B48E274AD98A00BC2E13 /* Products */;
-					ProjectRef = F809B48D274AD98A00BC2E13 /* openssl.xcodeproj */;
-				},
-				{
 					ProductGroup = F88BCC34274AB43A00FEFA92 /* Products */;
 					ProjectRef = F88BCC33274AB43A00FEFA92 /* PSMTabBarControl.xcodeproj */;
 				},
@@ -20513,18 +20501,13 @@
 				073737AE14FC206C00B11AFC /* WabbitEmuQLPlugin */,
 				0742293D14FD948700EDA215 /* WabbitCodeQLPlugin */,
 				7973AD90154D21E400DEC0EF /* spasm */,
+				F830AF9A274AF24B00EFFC92 /* gmp */,
+				F830AFAB274AF2CE00EFFC92 /* crypto */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F809BB99274AD99400BC2E13 /* libopenssl.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libopenssl.dylib;
-			remoteRef = F809BB98274AD99400BC2E13 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		F88BCC2A274AB38700FEFA92 /* BGHUDAppKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -20551,13 +20534,6 @@
 			fileType = wrapper.application;
 			path = PSMTabBarControlDemo.app;
 			remoteRef = F88BCCAF274AB43B00FEFA92 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F8F24FB0274AC96200C079E4 /* libgmp.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libgmp.dylib;
-			remoteRef = F8F24FAF274AC96200C079E4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -20812,6 +20788,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# -q silences duplicate comments with same key warning\nfind . -name \\*.m -not -path \"./External/*\" -print0 | xargs -0 genstrings -q -o ${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj\n";
+		};
+		F830AF9F274AF25900EFFC92 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nlipo_files=\"\"\n\nfor arch in $ARCHS\ndo\n    mkdir \"${CONFIGURATION_BUILD_DIR}/build_gmp_$arch\"\n    cd \"${CONFIGURATION_BUILD_DIR}/build_gmp_$arch\"\n    # Static linking is against gmp's license\n    LDFLAGS=\"-arch $arch\" CFLAGS=\"-arch $arch\" \"${SOURCE_ROOT}/Frameworks/gmp/configure\" --enable-shared --disable-static --build=\"$(\"${SOURCE_ROOT}/config.guess\")\" --host=\"$arch-apple-darwin\" --prefix=\"${CONFIGURATION_BUILD_DIR}/install_gmp_$arch\"\n    make install\n    lipo_files=\"$lipo_files -arch $arch ${CONFIGURATION_BUILD_DIR}/install_gmp_$arch/lib/libgmp.dylib\"\n    cp gmp.h \"${CONFIGURATION_BUILD_DIR}\"\ndone\n\n# not quoted\nlipo -create $lipo_files -output \"${CONFIGURATION_BUILD_DIR}/libgmp.dylib\"\n";
+		};
+		F830AFB0274AF2DF00EFFC92 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nlipo_files=\"\"\n\nfor arch in $ARCHS\ndo\n    mkdir \"${CONFIGURATION_BUILD_DIR}/build_openssl_$arch\"\n    cd \"${CONFIGURATION_BUILD_DIR}/build_openssl_$arch\"\n    # Static linking is against gmp's license\n    LDFLAGS=\"-arch $arch\" CFLAGS=\"-arch $arch\" \"${SOURCE_ROOT}/Frameworks/openssl/Configure\" \"darwin64-$arch\" --prefix=\"${CONFIGURATION_BUILD_DIR}/install_openssl_$arch\"\n    make install\n    lipo_files=\"$lipo_files -arch $arch ${CONFIGURATION_BUILD_DIR}/install_openssl_$arch/lib/libcrypto.dylib\"\n    cp -r \"${CONFIGURATION_BUILD_DIR}/install_openssl_$arch/include/openssl\" \"${CONFIGURATION_BUILD_DIR}\"\ndone\n\n# not quoted\nlipo -create $lipo_files -output \"${CONFIGURATION_BUILD_DIR}/libcrypto.dylib\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -21304,15 +21314,10 @@
 			target = 7973AD90154D21E400DEC0EF /* spasm */;
 			targetProxy = 79A1A08F154D268E0006F6B6 /* PBXContainerItemProxy */;
 		};
-		F809BB9D274ADA1A00BC2E13 /* PBXTargetDependency */ = {
+		F830AFA7274AF2B100EFFC92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = crypto;
-			targetProxy = F809BB9C274ADA1A00BC2E13 /* PBXContainerItemProxy */;
-		};
-		F8F24FB5274AC9A800C079E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = gmp;
-			targetProxy = F8F24FB4274AC9A800C079E4 /* PBXContainerItemProxy */;
+			target = F830AF9A274AF24B00EFFC92 /* gmp */;
+			targetProxy = F830AFA6274AF2B100EFFC92 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -21956,6 +21961,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${CONFIGURATION_BUILD_DIR}";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-I/opt/homebrew/opt/openssl/include";
@@ -21983,6 +21989,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${CONFIGURATION_BUILD_DIR}";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-I/opt/homebrew/opt/openssl/include";
 				SDKROOT = macosx;
@@ -22210,6 +22217,230 @@
 			};
 			name = Release;
 		};
+		F830AF9D274AF24B00EFFC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F830AF9E274AF24B00EFFC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F830AFAE274AF2CE00EFFC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F830AFAF274AF2CE00EFFC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -22263,6 +22494,24 @@
 			buildConfigurations = (
 				7973AD99154D21E400DEC0EF /* Debug */,
 				7973AD9A154D21E400DEC0EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F830AF9C274AF24B00EFFC92 /* Build configuration list for PBXNativeTarget "gmp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F830AF9D274AF24B00EFFC92 /* Debug */,
+				F830AF9E274AF24B00EFFC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F830AFAD274AF2CE00EFFC92 /* Build configuration list for PBXNativeTarget "crypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F830AFAE274AF2CE00EFFC92 /* Debug */,
+				F830AFAF274AF2CE00EFFC92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
