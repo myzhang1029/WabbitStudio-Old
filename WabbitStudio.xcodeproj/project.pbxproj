@@ -640,6 +640,9 @@
 		F88BCCB2274AB48500FEFA92 /* PSMTabBarControl.framework in Copy Private Frameworks */ = {isa = PBXBuildFile; fileRef = F88BCCAE274AB43B00FEFA92 /* PSMTabBarControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F88BCCB4274AB4DB00FEFA92 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88BCCAE274AB43B00FEFA92 /* PSMTabBarControl.framework */; };
 		F88BCCB5274AB4DB00FEFA92 /* PSMTabBarControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F88BCCAE274AB43B00FEFA92 /* PSMTabBarControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8D137BA274B08B9001AC331 /* wabbitemu.icns in Resources */ = {isa = PBXBuildFile; fileRef = F8D137B6274B08B8001AC331 /* wabbitemu.icns */; };
+		F8EFF8F7274AF981001932F6 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F830AFAC274AF2CE00EFFC92 /* libcrypto.dylib */; };
+		F8EFF8FD274AF98D001932F6 /* libcrypto.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F830AFAC274AF2CE00EFFC92 /* libcrypto.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F8F22C03274AC3A300C079E4 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = F8F22C02274AC3A300C079E4 /* Sparkle */; };
 /* End PBXBuildFile section */
 
@@ -672,6 +675,13 @@
 			remoteGlobalIDString = F830AF9A274AF24B00EFFC92;
 			remoteInfo = gmp;
 		};
+		F830AFB4274AF52800EFFC92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071ECCB514A4233C002409F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F830AFAB274AF2CE00EFFC92;
+			remoteInfo = crypto;
+		};
 		F88BCC29274AB38700FEFA92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F88BCC0C274AB38700FEFA92 /* BGHUDAppKit.xcodeproj */;
@@ -699,6 +709,27 @@
 			proxyType = 2;
 			remoteGlobalIDString = 8BD4395A1185147D00DB4AC3;
 			remoteInfo = PSMTabBarControlDemo;
+		};
+		F8D137A2274AFB49001AC331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F88BCC33274AB43A00FEFA92 /* PSMTabBarControl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
+			remoteInfo = PSMTabBarControlFramework;
+		};
+		F8D137A9274AFB4F001AC331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F88BCC0C274AB38700FEFA92 /* BGHUDAppKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
+			remoteInfo = BGHUDAppKit;
+		};
+		F8D137AB274AFB59001AC331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F88BCC33274AB43A00FEFA92 /* PSMTabBarControl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
+			remoteInfo = PSMTabBarControlFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -764,6 +795,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F830AFA5274AF2B100EFFC92 /* libgmp.dylib in Embed Libraries */,
+				F8EFF8FD274AF98D001932F6 /* libcrypto.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -6365,6 +6397,7 @@
 		F88BCCA8274AB43B00FEFA92 /* AquaTabNewRollover.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = AquaTabNewRollover.psd; sourceTree = "<group>"; };
 		F88BCCA9274AB43B00FEFA92 /* AquaTabNewPressed.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = AquaTabNewPressed.psd; sourceTree = "<group>"; };
 		F8AEF34A274ABC320002AED4 /* Sparkle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sparkle; sourceTree = "<group>"; };
+		F8D137B6274B08B8001AC331 /* wabbitemu.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = wabbitemu.icns; sourceTree = "<group>"; };
 		F8F246CA274AC95E00C079E4 /* longlong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = longlong.h; sourceTree = "<group>"; };
 		F8F246CB274AC95E00C079E4 /* COPYING.LESSERv3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING.LESSERv3; sourceTree = "<group>"; };
 		F8F246CC274AC95E00C079E4 /* acinclude.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = acinclude.m4; sourceTree = "<group>"; };
@@ -8509,6 +8542,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EFF8F7274AF981001932F6 /* libcrypto.dylib in Frameworks */,
 				F830AFA4274AF2B100EFFC92 /* libgmp.dylib in Frameworks */,
 				79A1A08D154D262A0006F6B6 /* libc.dylib in Frameworks */,
 				79A1A08B154D260C0006F6B6 /* libmathCommon.dylib in Frameworks */,
@@ -9343,6 +9377,7 @@
 		075D2FBC14F36779007F8951 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F8D137B6274B08B8001AC331 /* wabbitemu.icns */,
 				075D2FBD14F36779007F8951 /* WabbitEmu-Info.plist */,
 				075D2FBE14F36779007F8951 /* InfoPlist.strings */,
 				075D2FC114F36779007F8951 /* main.m */,
@@ -20297,6 +20332,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				F8D137AA274AFB4F001AC331 /* PBXTargetDependency */,
+				F8D137A3274AFB49001AC331 /* PBXTargetDependency */,
 				07FCEDED1508118800595ADA /* PBXTargetDependency */,
 				79A1A090154D268E0006F6B6 /* PBXTargetDependency */,
 			);
@@ -20360,6 +20397,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F8D137AC274AFB59001AC331 /* PBXTargetDependency */,
 				07FCEDEF1508118C00595ADA /* PBXTargetDependency */,
 			);
 			name = WabbitEmu;
@@ -20379,6 +20417,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F830AFB5274AF52800EFFC92 /* PBXTargetDependency */,
 				F830AFA7274AF2B100EFFC92 /* PBXTargetDependency */,
 			);
 			name = spasm;
@@ -20724,6 +20763,7 @@
 				0742296D14FDD4E700EDA215 /* wabbitstudio.icns in Resources */,
 				07FCEDCB1507EACE00595ADA /* RSDisassemblyView.xib in Resources */,
 				07FCEDCC1507EED600595ADA /* VerticalSeparator.png in Resources */,
+				F8D137BA274B08B9001AC331 /* wabbitemu.icns in Resources */,
 				074B748A150D23D10096548E /* RSRegistersView.xib in Resources */,
 				074B74A2150D2D620096548E /* RSFlagsView.xib in Resources */,
 				074B74AE150D40E40096548E /* RSCPUView.xib in Resources */,
@@ -21318,6 +21358,26 @@
 			isa = PBXTargetDependency;
 			target = F830AF9A274AF24B00EFFC92 /* gmp */;
 			targetProxy = F830AFA6274AF2B100EFFC92 /* PBXContainerItemProxy */;
+		};
+		F830AFB5274AF52800EFFC92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F830AFAB274AF2CE00EFFC92 /* crypto */;
+			targetProxy = F830AFB4274AF52800EFFC92 /* PBXContainerItemProxy */;
+		};
+		F8D137A3274AFB49001AC331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PSMTabBarControlFramework;
+			targetProxy = F8D137A2274AFB49001AC331 /* PBXContainerItemProxy */;
+		};
+		F8D137AA274AFB4F001AC331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BGHUDAppKit;
+			targetProxy = F8D137A9274AFB4F001AC331 /* PBXContainerItemProxy */;
+		};
+		F8D137AC274AFB59001AC331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PSMTabBarControlFramework;
+			targetProxy = F8D137AB274AFB59001AC331 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -21941,7 +22001,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = $SRCROOT/Frameworks;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -21973,7 +22033,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = $SRCROOT/Frameworks;
@@ -22000,6 +22060,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WabbitCode/WabbitCode-Prefix.pch";
 				GCC_VERSION = "";
@@ -22022,6 +22083,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WabbitCode/WabbitCode-Prefix.pch";
 				GCC_VERSION = "";
@@ -22043,6 +22105,7 @@
 		073737C614FC206C00B11AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WabbitEmuQLPlugin/WabbitEmuQLPlugin-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -22064,6 +22127,7 @@
 		073737C714FC206C00B11AFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WabbitEmuQLPlugin/WabbitEmuQLPlugin-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -22085,6 +22149,7 @@
 		0742295014FD948700EDA215 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WabbitCodeQLPlugin/WabbitCodeQLPlugin-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -22106,6 +22171,7 @@
 		0742295114FD948700EDA215 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WabbitCodeQLPlugin/WabbitCodeQLPlugin-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -22123,6 +22189,7 @@
 		075D2FD014F3677A007F8951 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -22145,6 +22212,7 @@
 		075D2FD114F3677A007F8951 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -22168,6 +22236,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					MACVER,
 					DEBUG,
@@ -22195,6 +22264,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					MACVER,
 					USE_REUSABLES,

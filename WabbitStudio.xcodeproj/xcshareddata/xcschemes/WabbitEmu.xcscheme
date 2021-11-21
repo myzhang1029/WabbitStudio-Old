@@ -44,12 +44,21 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8BD439591185147D00DB4AC3"
+            BuildableName = "PSMTabBarControlDemo.app"
+            BlueprintName = "PSMTabBarControlDemo"
+            ReferencedContainer = "container:Frameworks/PSMTabBarControl/PSMTabBarControl.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
             BlueprintIdentifier = "075D2FB714F36779007F8951"
             BuildableName = "WabbitEmu.app"
             BlueprintName = "WabbitEmu"
             ReferencedContainer = "container:WabbitStudio.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
